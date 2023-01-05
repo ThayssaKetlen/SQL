@@ -1,4 +1,4 @@
-# Estudos básicos da linguagem sql
+# Estudos básicosgit branch da linguagem sql
 
 *você irá precisar instalar*
 `mysql`

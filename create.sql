@@ -8,4 +8,3 @@ CREATE TABLE <nome da tabela>
     id_tabela int PRIMARY KEY AUTO_INCREMENT,
     
 )
-
