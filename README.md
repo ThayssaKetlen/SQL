@@ -1,4 +1,4 @@
-# Estudos da linguagem sql
+# Estudos básicos da linguagem sql
 
 *você irá precisar instalar*
 `mysql`
