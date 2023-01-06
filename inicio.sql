@@ -1,0 +1,1 @@
+SHOW DATABASES -para mostrar todos os banco de dados existentes
