@@ -6,5 +6,5 @@ CREATE TABLE <nome da tabela>
     <nome da coluna> tipo de dado
     ex:
     id_tabela int PRIMARY KEY AUTO_INCREMENT,
-    
+    ex: nacionalidade DEFAULT 'brasil'- se n for inserido nada por padrão será brasil
 )
