@@ -6,5 +6,6 @@ CREATE TABLE <nome da tabela>
     <nome da coluna> tipo de dado
     ex:
     id_tabela int PRIMARY KEY AUTO_INCREMENT,
-    
+    ex:
+    nacionalidade varchar(20) default 'brasil'- caso n seja preenchido sera acrescenatdo o valor default
 )
