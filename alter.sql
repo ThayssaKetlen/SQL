@@ -8,7 +8,7 @@ ALTER TABLE <nome da tabela> ADD <nome da coluna> (tipo de dado) FIRST - serve p
 
 ALTER TABLE <nome da tabela> MODIFY <nome da coluna> (tipo de dado) - serve para modificar as definições da coluna
 
-ALTER TABLE <nome da tabela> CHANGE COLUMN  <nome atual da coluna> <nome novo> tipo de dado) - serve para renomear a coluna
+ALTER TABLE <nome da tabela> CHANGE COLUMN  <nome atual da coluna> <nome novo> (tipo de dado) - serve para renomear a coluna
 
 ALTER TABLE <nome atual da tabela > RENAME TO <nome futuro> - renomear  a tabela
 
