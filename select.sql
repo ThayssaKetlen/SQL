@@ -28,3 +28,18 @@ SELECT MAX(id) FROM `pessoas` WHERE cidade != 'fortaleza'- irá selecionar o id 
 SELECT SUM(totaulas) FROM `cursos` WHERE ano = 2016 -  irá mostrar a soma dos valores da coluna onde o ano for = ao valor informado
 
 SELECT MIN(carga) FROM `cursos` WHERE ano = 2016
+
+SELECT <nome da coluna> FROM <nome da tabela> group by <nome da coluna q colocou primeiro> - irá dar uma resultado parecido com o distinct mas tem uma diferença se vc acrescentar parâmetro
+{ex:
+SELECT carga, COUNT(nome) FROM cursos group by carga - que vai mostrar o agrupamento das cragas com valores iguais e mostrar a contagem de acordo com o nome
+
+SELECT carga,COUNT(nome) FROM cursos GROUP by carga HAVING COUNT(nome) > 1 - esse vai mostrar a contagem que for maior do q 1 e do atributo nome junto com a carga
+,ou seja, via mostrar a contagem de nomesque tenhamo valor da carga igual acima de 1
+
+SELECT carga, COUNT(*) FROM cursos WHERE ano > 2016 GROUP BY carga HAVING carga > (SELECT avg(carga) FROM cursos) -  esse é bem interressante pq é o agrupamento de dois códigos sql. o ultimo diz pra ele listar somente quem estiver acima da media de carg e coloca o codigo pra contar a media de carga.
+}
+
+SELECT altura, COUNT(nome) FROM `pessoas` WHERE peso > 100 GROUP BY altura HAVING altura > (SELECT avg(altura) from pessoas) - mostra somente as pessoas que tem altura acima da media e pesam mais de 100 kg
+
+SELECT avg(atributo) from <nome da tabela>- ele calcula a media do atributo solicitado
+
